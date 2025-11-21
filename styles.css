@@ -30,8 +30,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    /* background: linear-gradient(135deg, var(--emerald-50) 0%, var(--white) 50%, var(--emerald-50) 100%); */
-    background: white;
+    background: linear-gradient(135deg, var(--emerald-200) 0%, var(--white) 50%, var(--emerald-200) 100%);
+    /* background: white; */
     color: var(--gray-800);
     overflow-x: hidden;
 }
@@ -138,7 +138,7 @@ body {
 }
 
 #navbar.scrolled {
-    /* background: rgba(255, 255, 255, 0.95); */
+    background: rgba(255, 255, 255, 0.95);
     background: linear-gradient(135deg, var(--emerald-50) 0%, var(--white) 50%, var(--emerald-50) 100%);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 6px rgba(6, 78, 59, 0.1);
@@ -334,11 +334,24 @@ body {
     overflow: hidden;
 }
 
+.image-placeholder-hero {
+    background: none;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: var(--emerald-300);
+    overflow: hidden;
+}
+
 .hero-img {
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: 1.5rem;
+    
 }
 
 .story-img {

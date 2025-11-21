@@ -164,7 +164,7 @@ function renderProducts() {
                 <p class="product-desc">${product.desc}</p>
                 <div class="product-footer">
                     <span class="product-price">${product.price}</span>
-                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="add-cart-btn">See more</button>
                 </div>
             </div>
         `;
