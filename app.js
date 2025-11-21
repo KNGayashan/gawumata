@@ -104,7 +104,41 @@ const reviews = [
     name: "Rashmi Perera",
     review: "Elegant and comfortable. Perfect for my daughter's special day!",
     rating: 5
-  }
+  },
+  {
+    name: "Amaya Silva",
+    review:
+      "Absolutely stunning dress! The quality is amazing and it fit perfectly.",
+    rating: 5
+  },
+  {
+    name: "Nisha Fernando",
+    review:
+      "Beautiful collection! I bought two dresses and received so many compliments.",
+    rating: 5
+  },
+  {
+    name: "Rashmi Perera",
+    review: "Elegant and comfortable. Perfect for my daughter's special day!",
+    rating: 5
+  },
+  {
+    name: "Amaya Silva",
+    review:
+      "Absolutely stunning dress! The quality is amazing and it fit perfectly.",
+    rating: 5
+  },
+  {
+    name: "Nisha Fernando",
+    review:
+      "Beautiful collection! I bought two dresses and received so many compliments.",
+    rating: 5
+  },
+  {
+    name: "Rashmi Perera",
+    review: "Elegant and comfortable. Perfect for my daughter's special day!",
+    rating: 5
+  },
 ];
 
 // Render Products
@@ -179,7 +213,7 @@ function renderReviews() {
             <div class="review-avatar">${review.name.charAt(0)}</div>
             <div class="review-stars">${starsHTML}</div>
             <p class="review-text">"${review.review}"</p>
-            <p class="review-name">- ${review.name}</p>
+            <p class="review-name">${review.name}</p>
         `;
     reviewsGrid.appendChild(reviewCard);
   });
@@ -465,6 +499,7 @@ function init() {
   renderProducts();
   renderFeatures();
   renderReviews();
+  setupReviewSlider();
 
   // Setup event listeners
   window.addEventListener("scroll", handleNavbarScroll);
@@ -483,3 +518,49 @@ if (document.readyState === "loading") {
 } else {
   init();
 }
+
+// GSAP Scroll Animations
+gsap.registerPlugin(ScrollTrigger);
+
+// Select all sections except hero
+const sections = document.querySelectorAll("section:not(.hero)");
+
+sections.forEach((sec) => {
+  gsap.from(sec, {
+    opacity: 0,
+    y: 160,
+    duration: 2.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sec,
+      start: "top 85%",  // Start animation when section comes into view
+      toggleActions: "play none none reverse"
+    }
+  });
+});
+
+function setupReviewSlider() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const slider = document.querySelector("#reviewsGrid");
+
+  // Clone items for smooth infinite loop
+  const cards = Array.from(slider.children);
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    slider.appendChild(clone);
+  });
+
+  // Animation
+  const sliderAnimation = gsap.to("#reviewsGrid", {
+    x: "-50%",
+    duration: 10,
+    ease: "linear",
+    repeat: -1
+  });
+
+  // Pause on hover
+  slider.addEventListener("mouseenter", () => sliderAnimation.pause());
+  slider.addEventListener("mouseleave", () => sliderAnimation.resume());
+}
+

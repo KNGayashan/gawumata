@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 :root {
@@ -517,7 +518,7 @@ body {
 }
 
 .product-price {
-    font-size: 1.5rem;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
     font-weight: bold;
     color: var(--purple-600);
 }
@@ -531,6 +532,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .add-cart-btn:hover {
@@ -665,7 +667,30 @@ body {
     z-index: 10;
 }
 
-.reviews-grid {
+.reviews-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .reviews-grid {
+    display: flex;
+    gap: 2rem;
+    will-change: transform;
+  }
+  
+  .review-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 280px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+/* .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -678,7 +703,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     text-align: center;
-}
+} */
 
 .review-card:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -1168,7 +1193,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 9999px;
     border: none;
-    font-size: 1.125rem;
+    font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -1380,3 +1405,5 @@ body {
         font-size: 16px;
     }
 }
+
+
