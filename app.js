@@ -3,7 +3,7 @@ const products = [
   {
     id: 1,
     name: "Milkmade Frock (GWC 001)",
-    desc: "Lace Cotton Soft lavender dress",
+    desc: "Maslin Material (Bangkok Quality) Soft lavender dress",
     price: "Rs. 2,990",
     fullDescription:
       "This charming Milkmade Frock (GWC 001) brings together comfort and elegance in a beautifully simple design. Featuring a softly gathered neckline with a front tie detail and delicate puff sleeves, it creates a flattering, feminine silhouette. The long flowing skirt includes a subtle front slit that adds ease of movement and a touch of modern style.",
