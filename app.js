@@ -2,27 +2,25 @@
 const products = [
   {
     id: 1,
-    name: "Rose Garden Dress",
-    desc: "Elegant lace bodice with flowing skirt",
-    price: "Rs. 4,500",
+    name: "Milkmade Frock (GWC 001)",
+    desc: "Lace Cotton Soft lavender dress",
+    price: "Rs. 2,990",
     fullDescription:
-      "This beautiful Rose Garden Dress features an elegant lace bodice with intricate floral patterns, paired with a flowing skirt that moves gracefully. Perfect for weddings, parties, and special occasions. Made from premium quality fabric for maximum comfort.",
+      "This charming Milkmade Frock (GWC 001) brings together comfort and elegance in a beautifully simple design. Featuring a softly gathered neckline with a front tie detail and delicate puff sleeves, it creates a flattering, feminine silhouette. The long flowing skirt includes a subtle front slit that adds ease of movement and a touch of modern style.",
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: [
-      { name: "Pink", value: "#FFC0CB" },
-      { name: "White", value: "#FFFFFF" },
       { name: "Lavender", value: "#E6E6FA" }
     ],
     images: 3,
-    imagePaths: ["./img/pro11.jpeg", "./img/pro12.jpeg", "./img/pro13.jpeg"]
+    imagePaths: ["./img/GWC_001-1.jpg", "./img/GWC_001-2.jpg", "./img/GWC_001-3.jpg"]
   },
   {
     id: 2,
-    name: "Lavender Dream",
-    desc: "Delicate floral embroidery",
-    price: "Rs. 5,200",
+    name: "Coming Soon",
+    desc: "Coming Soon",
+    price: "Rs. #,###",
     fullDescription:
-      "The Lavender Dream dress showcases delicate floral embroidery work throughout, creating a stunning visual appeal. This dress is perfect for garden parties and daytime events. Features a comfortable fit with adjustable straps.",
+      "Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon",
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: [
       { name: "Lavender", value: "#E6E6FA" },
@@ -30,72 +28,25 @@ const products = [
       { name: "Peach", value: "#FFE5B4" }
     ],
     images: 3,
-    imagePaths: ["./img/pro21.jpeg", "./img/pro22.jpeg", "./img/pro23.jpeg"]
+    imagePaths: ["./img/comingsoon.jpg", "./img/comingsoon.jpg", "./img/comingsoon.jpg"]
   },
   {
     id: 3,
-    name: "Pearl Princess",
-    desc: "Pearl-embellished halter neck",
-    price: "Rs. 6,800",
+    name: "Coming Soon",
+    desc: "Coming Soon",
+    price: "Rs. #,###",
     fullDescription:
-      "A luxurious pearl-embellished halter neck dress that exudes elegance and sophistication. Each pearl is carefully hand-sewn for a premium finish. Perfect for formal events and evening occasions. Features a fitted bodice and flowing skirt.",
+      "Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon",
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: [
-      { name: "White", value: "#FFFFFF" },
-      { name: "Champagne", value: "#F7E7CE" },
-      { name: "Blush", value: "#FFE4E1" }
+      { name: "Lavender", value: "#E6E6FA" },
+      { name: "Mint", value: "#98D8C8" },
+      { name: "Peach", value: "#FFE5B4" }
     ],
     images: 3,
-    imagePaths: ["./img/pro31.jpeg", "./img/pro32.jpeg", "./img/pro33.jpeg"]
+    imagePaths: ["./img/comingsoon.jpg", "./img/comingsoon.jpg", "./img/comingsoon.jpg"]
   },
-  {
-    id: 4,
-    name: "Sunset Bloom",
-    desc: "Coral pink with ribbon detail",
-    price: "Rs. 4,800",
-    fullDescription:
-      "The Sunset Bloom dress features a beautiful coral pink shade with elegant ribbon detailing at the waist. This dress combines comfort with style, making it perfect for both casual and semi-formal events. Soft, breathable fabric ensures all-day comfort.",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [
-      { name: "Coral", value: "#FF7F50" },
-      { name: "Rose", value: "#FF69B4" },
-      { name: "Salmon", value: "#FA8072" }
-    ],
-    images: 3,
-    imagePaths: ["./img/pro41.jpeg", "./img/pro42.jpeg", "./img/pro43.jpeg"]
-  },
-  {
-    id: 5,
-    name: "Ivory Elegance",
-    desc: "Classic white with gold accents",
-    price: "Rs. 7,500",
-    fullDescription:
-      "Experience timeless beauty with the Ivory Elegance dress. This classic white dress is enhanced with delicate gold accents that add a touch of luxury. Perfect for weddings, baptisms, and formal celebrations. Premium fabric with exquisite craftsmanship.",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [
-      { name: "Ivory", value: "#FFFFF0" },
-      { name: "White", value: "#FFFFFF" },
-      { name: "Cream", value: "#FFFDD0" }
-    ],
-    images: 3,
-    imagePaths: ["./img/pro11.jpeg", "./img/pro12.jpeg", "./img/pro13.jpeg"]
-  },
-  {
-    id: 6,
-    name: "Cherry Blossom",
-    desc: "Soft pink tulle creation",
-    price: "Rs. 5,900",
-    fullDescription:
-      "The Cherry Blossom dress is a dreamy soft pink tulle creation with multiple layers for a princess-like effect. Features a fitted bodice with delicate embellishments and a full, flowing skirt. Perfect for making a grand entrance at any special occasion.",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: [
-      { name: "Pink", value: "#FFB6C1" },
-      { name: "Baby Pink", value: "#F4C2C2" },
-      { name: "Rose Pink", value: "#FF66B2" }
-    ],
-    images: 3,
-    imagePaths: ["./img/pro21.jpeg", "./img/pro22.jpeg", "./img/pro23.jpeg"]
-  }
+  
 ];
 
 // Features Data
