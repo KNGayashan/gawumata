@@ -2,33 +2,33 @@
 const products = [
   {
     id: 1,
-    name: "Milkmade Frock (GWC 001)",
+    name: "Milk Maide Frock (GWC 001)",
     desc: "Maslin Material (Bangkok Quality) Soft lavender dress",
     price: "Rs. 2,990",
     fullDescription:
-      "This charming Milkmade Frock (GWC 001) brings together comfort and elegance in a beautifully simple design. Featuring a softly gathered neckline with a front tie detail and delicate puff sleeves, it creates a flattering, feminine silhouette. The long flowing skirt includes a subtle front slit that adds ease of movement and a touch of modern style.",
+      "This charming Milk Maide Frock (GWC 001) brings together comfort and elegance in a beautifully simple design. Featuring a softly gathered neckline with a front tie detail and delicate puff sleeves, it creates a flattering, feminine silhouette. The long flowing skirt includes a subtle front slit that adds ease of movement and a touch of modern style.",
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: [
       { name: "Lavender", value: "#E6E6FA" }
     ],
-    images: 3,
+    images: 4,
     imagePaths: ["./img/GWC_001-1.jpg", "./img/GWC_001-2.jpg", "./img/GWC_001-3.jpg"]
   },
   {
     id: 2,
-    name: "Coming Soon",
-    desc: "Coming Soon",
-    price: "Rs. #,###",
+    name: "Lily Bloom Frock (GWC 002)",
+    desc: "Step into a dream with Valentina Material enchanting Lily Bloom Frock.",
+    price: "Rs. 2,690",
     fullDescription:
-      "Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon",
-    sizes: ["XS", "S", "M", "L", "XL"],
+      "Crafted from luxurious Valentina material, this dress promises a flawless, structured silhouette with a beautiful, gentle sheen that moves gracefully with every step. Adorned with a vibrant, modern floral print that sweeps across the skirt in shades of blush pink and fuchsia, the Lily Bloom Frock captures the essence of a spring garden at dawn. Featuring charming puff sleeves with delicate ruffles and a flattering square neckline, this piece is tied together with a sweet bow detail at the waist. Perfect for parties, special occasions, or simply making every day feel a little more magical.",
+    sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
     colors: [
-      { name: "Lavender", value: "#E6E6FA" },
-      { name: "Mint", value: "#98D8C8" },
-      { name: "Peach", value: "#FFE5B4" }
+      { name: "Off White", value: "#FAF9F6" },
+      // { name: "Mint", value: "#98D8C8" },
+      // { name: "Peach", value: "#FFE5B4" }
     ],
     images: 3,
-    imagePaths: ["./img/comingsoon.jpg", "./img/comingsoon.jpg", "./img/comingsoon.jpg"]
+    imagePaths: ["./img/GWC_002-1.jpg", "./img/GWC_002-2.jpg", "./img/GWC_002-3.jpg"]
   },
   {
     id: 3,
