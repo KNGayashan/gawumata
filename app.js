@@ -28,7 +28,8 @@ const products = [
       // { name: "Peach", value: "#FFE5B4" }
     ],
     images: 3,
-    imagePaths: ["./img/GWC_002-1.jpg", "./img/GWC_002-2.jpg", "./img/GWC_002-3.jpg"]
+    // imagePaths: ["./img/GWC_002-1.jpg", "./img/GWC_002-2.jpg", "./img/GWC_002-3.jpg"],
+    imagePaths: ["./img/GWC_002-sold.jpg"]
   },
   {
     id: 3,
