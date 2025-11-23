@@ -27,10 +27,10 @@ const products = [
       // { name: "Mint", value: "#98D8C8" },
       // { name: "Peach", value: "#FFE5B4" }
     ],
-    // images: 3,
-    images: 1,
-    // imagePaths: ["./img/GWC_002-1.jpg", "./img/GWC_002-2.jpg", "./img/GWC_002-3.jpg"],
-    imagePaths: ["./img/GWC_002-sold.jpg"]
+    images: 3,
+    // images: 1,
+    imagePaths: ["./img/GWC_002-1.jpg", "./img/GWC_002-2.jpg", "./img/GWC_002-3.jpg"],
+    // imagePaths: ["./img/GWC_002-sold.jpg"]
   },
   {
     id: 3,
