@@ -193,6 +193,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 4px 6px rgba(5, 150, 105, 0.2);
+    text-decoration: none;
 }
 
 .shop-btn:hover {
@@ -1290,6 +1291,10 @@ body {
 
     .mobile-menu-btn {
         display: flex;
+    }
+
+    .shop-btn {
+        display: none;
     }
 
     .main-title {

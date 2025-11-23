@@ -256,18 +256,71 @@ function setupSmoothScroll() {
 function setupMobileMenu() {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navLinks = document.querySelector(".nav-links");
+  const shopBtn = document.querySelector(".shop-btn");
 
   mobileMenuBtn.addEventListener("click", () => {
-    navLinks.style.display =
-      navLinks.style.display === "flex" ? "none" : "flex";
-    navLinks.style.position = "absolute";
-    navLinks.style.top = "5rem";
-    navLinks.style.left = "0";
-    navLinks.style.right = "0";
-    navLinks.style.flexDirection = "column";
-    navLinks.style.background = "white";
-    navLinks.style.padding = "2rem";
-    navLinks.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+    const isOpen = navLinks.style.display === "flex";
+    
+    if (isOpen) {
+      navLinks.style.display = "none";
+    } else {
+      navLinks.style.display = "flex";
+      navLinks.style.position = "absolute";
+      navLinks.style.top = "5rem";
+      navLinks.style.left = "0";
+      navLinks.style.right = "0";
+      navLinks.style.flexDirection = "column";
+      navLinks.style.background = "white";
+      navLinks.style.padding = "2rem";
+      navLinks.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+      navLinks.style.gap = "1.5rem";
+      
+      // Clone and add shop button to mobile menu if not already there
+      if (!navLinks.querySelector(".shop-btn-mobile")) {
+        const shopBtnClone = shopBtn.cloneNode(true);
+        shopBtnClone.classList.add("shop-btn-mobile");
+        shopBtnClone.style.display = "flex";
+        shopBtnClone.style.width = "100%";
+        shopBtnClone.style.justifyContent = "center";
+        shopBtnClone.style.marginTop = "1rem";
+        navLinks.appendChild(shopBtnClone);
+      }
+    }
+  });
+}// Mobile Menu Toggle
+function setupMobileMenu() {
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const navLinks = document.querySelector(".nav-links");
+  const shopBtn = document.querySelector(".shop-btn");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    const isOpen = navLinks.style.display === "flex";
+    
+    if (isOpen) {
+      navLinks.style.display = "none";
+    } else {
+      navLinks.style.display = "flex";
+      navLinks.style.position = "absolute";
+      navLinks.style.top = "5rem";
+      navLinks.style.left = "0";
+      navLinks.style.right = "0";
+      navLinks.style.flexDirection = "column";
+      navLinks.style.background = "white";
+      navLinks.style.padding = "2rem";
+      navLinks.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+      navLinks.style.gap = "1.5rem";
+      
+      // Clone and add shop button to mobile menu if not already there
+      if (!navLinks.querySelector(".shop-btn-mobile")) {
+        const shopBtnClone = shopBtn.cloneNode(true);
+        shopBtnClone.classList.add("shop-btn-mobile");
+        shopBtnClone.style.display = "flex";
+        shopBtnClone.style.width = "100%";
+        shopBtnClone.style.justifyContent = "center";
+        shopBtnClone.style.marginTop = "1rem";
+        navLinks.appendChild(shopBtnClone);
+      }
+    }
   });
 }
 
